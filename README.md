@@ -8,7 +8,7 @@
  - UTL is a storngly statically-typed language and supports standard types such as `int`, `float`, `boolean`, `string` and some complex new types such as `Candle` and `Trade` which are used in trading scripts.
  - It has most of basic programming structures, such as `local-global variable`, `function`, `while`, `for`, `try catch`, `Exception`, `if else`, `comment` and etc.
  - The overal structure is similliar to C++, having a Main function.
- - Full details are presented in the [documentation](https://github.com/MMDSour/PLC-CA/blob/main/PLC_Phase4/src/main/visitor/codeGenerator/CodeGenerator.java).
+ - Full details are presented in the [documentation](https://github.com/mmd-nemati/Compiler-F02-Projects/blob/main/UTL-Documentation/UT%20Trading%20Language%20Documentation.pdf).
  - A sample code is given below.
   ``` java 
 void Main() {
