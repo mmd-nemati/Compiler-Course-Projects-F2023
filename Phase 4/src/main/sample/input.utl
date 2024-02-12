@@ -1,0 +1,39 @@
+int balance;
+int tick_counts = 0;
+
+void OnInit(Trade t1) {
+    Order o3 = Order(SELL, 100, 100, 10);
+}
+
+void OnInit(Trade t3) {
+    Order o1 = Order(BUY, 200, 50, 5);
+    Order o2 = Order(SELL, 100, 100, 10);
+}
+
+void OnStart (Trade t1) throw Exception
+{
+    float low = t1.Bid;
+    float high = t1.Ask;
+
+    //linear regression algorithm
+    float Stoploss = 100;
+    float TakeProfit = 250;
+    float amount = 20;
+    Order o1 = Order(BUY, Stoploss, TakeProfit, amount);
+    float profit_ratio = TakeProfit/amount;
+}
+
+void OnStart(Trade t3) //throws
+{
+    GetCandle(100);
+}
+
+void Main()
+{
+    string username = "admin";
+    Connect(username, "password");
+    Trade t1 = Observe("USDETH");
+    int d = t1.Digits;
+    Trade t3 = Observe("IRRETH");
+}
+
