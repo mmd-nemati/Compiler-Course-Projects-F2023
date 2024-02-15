@@ -3,11 +3,11 @@
 
 ---
 ## Overview:
- - UT Trade Language (UTL) is a language designed by PLC course team, to do algorithmic trading in crtyptocurrency market. 
+ - UT Trade Language (UTL) is a language designed by PLC course team, to do algorithmic trading in cryptocurrency market. 
  - UTL scripts need a broker to work properly. 
- - UTL is a storngly statically-typed language and supports standard types such as `int`, `float`, `boolean`, `string` and some complex new types such as `Candle` and `Trade` which are used in trading scripts.
+ - UTL is a strongly statically-typed language and supports standard types such as `int`, `float`, `boolean`, `string` and some complex new types such as `Candle` and `Trade` which are used in trading scripts.
  - It has most of basic programming structures, such as `local-global variable`, `function`, `while`, `for`, `try catch`, `Exception`, `if else`, `comment` and etc.
- - The overal structure is similliar to C++, having a Main function.
+ - The overal structure is similliar to C++, having a Main function and its typing system.
  - Full details are presented in the [documentation](https://github.com/mmd-nemati/Compiler-F02-Projects/blob/main/UTL-Documentation/UT%20Trading%20Language%20Documentation.pdf).
  - A sample code is given below.
   ``` java 
@@ -30,7 +30,7 @@ void Main() {
 ---
 ## Projects:
 
-  <summary> <h4> We implemented the language complier using Antlr4 adnd Java in 4 phases.</h3></summary>
+  <summary> <h4> We implemented the language complier using ANTLR4 and Java in 4 phases.</h3></summary>
 
 1. In [Phase 1](#phase-1---lexer-and-parser), the Lexical analyzer and Syntax analyzer paresr were developed using Antlr4.
 2. [Phase 2](#phase-2---ast-and-name-analyzer) was dedicated to implementing generating AST from the input and also Name analyzer.
